@@ -73,6 +73,7 @@ body {
   border: solid 1px hsla(15, 0%, 75%, 0.75);
   border-radius: 5px;
   background-color: hsla(15, 0%, 100%, 0.15);
+  user-select: none;
 }
 .btn-info--up {
   bottom: 150%;
@@ -87,12 +88,12 @@ body {
   left: 150%;
 }
 .btn-info--b {
-  bottom: 125%;
-  left: calc(50% - 25px);
+  top: 150%;
+  right: 25%;
 }
 .btn-info--a {
-  bottom: 125%;
-  left: calc(50% - 25px);
+  top: 150%;
+  right: 25%;
 }
 .btn-info--select {
   bottom: 0;
@@ -226,6 +227,7 @@ body {
   text-align: center;
   transform: rotate(-25deg);
   cursor: default;
+  user-select: none;
 }
 
 .btn-options {
@@ -259,6 +261,7 @@ body {
   text-align: center;
   transform: rotate(-90deg);
   cursor: default;
+  user-select: none;
 }
 
 /*# sourceMappingURL=styles.css.map */

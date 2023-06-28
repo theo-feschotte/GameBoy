@@ -46,8 +46,6 @@ body {
     height: 100vh;
     min-height: 100vh;
     max-height: 100vh;
-    margin: 0;
-    padding: 0;
     background-color: $light-grey;
     overflow: hidden;
 }
@@ -55,7 +53,6 @@ body {
 .gameboy {
     width: 100%;
     height: 100%;
-    margin: 0;
     padding: 20vh 20vw;
     display: flex;
     flex-wrap: wrap;

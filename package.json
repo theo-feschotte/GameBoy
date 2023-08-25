@@ -1,7 +1,7 @@
 {
   "name": "gameboy",
   "version": "1.0.0",
-  "description": "Minimal Gameboy design and creative development.",
+  "description": "Minimal Gameboy.",
   "main": "script.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

@@ -2,6 +2,8 @@
 // ----------------------------------------------------------------------------------------------------
 
 // CONST AND VARS ---------------------------------------------------------------------------
+const fxSounds = document.getElementById("fx_sounds");
+
 const up = document.getElementsByClassName("btn-joysticks__item--up")[0];
 const left = document.getElementsByClassName("btn-joysticks__item--left")[0];
 const down = document.getElementsByClassName("btn-joysticks__item--down")[0];
@@ -21,16 +23,11 @@ const btnInfosSpace = document.getElementsByClassName("btn-info--b")[0];
 const btnInfosF = document.getElementsByClassName("btn-info--a")[0];
 const btnInfosShift = document.getElementsByClassName("btn-info--select")[0];
 const btnInfosCmd = document.getElementsByClassName("btn-info--start")[0];
-
-const sectionTag = document.getElementsByClassName("gameboy")[0];
-const newAudioTag = document.createElement("audio");
-newAudioTag.setAttribute("src", "/dist/fx_sounds/keypressed.mp3");
 // ----------------------------------------------------------------------------------------------------
 
 // GLOBAL FUNCTIONS ---------------------------------------------------------------------------
 function fx_sounds() {
-    document.body.insertBefore(newAudioTag, sectionTag);
-    document.getElementsByTagName("audio")[0].play();
+    fxSounds.play();
 };
 function btnUp() {
     console.log("UP");

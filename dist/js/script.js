@@ -24,7 +24,7 @@ const btnInfosCmd = document.getElementsByClassName("btn-info--start")[0];
 
 const sectionTag = document.getElementsByClassName("gameboy")[0];
 const newAudioTag = document.createElement("audio");
-newAudioTag.innerHTML = '<source src="/dist/fx_sounds/keypressed.mp3" type="audio/mp3">';
+newAudioTag.setAttribute("src", "/dist/fx_sounds/keypressed.mp3");
 // ----------------------------------------------------------------------------------------------------
 
 // GLOBAL FUNCTIONS ---------------------------------------------------------------------------

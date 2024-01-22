@@ -24,8 +24,6 @@ body {
   height: 100vh;
   min-height: 100vh;
   max-height: 100vh;
-  margin: 0;
-  padding: 0;
   background-color: hsl(0, 5%, 90%);
   overflow: hidden;
 }
@@ -33,7 +31,6 @@ body {
 .gameboy {
   width: 100%;
   height: 100%;
-  margin: 0;
   padding: 20vh 20vw;
   display: flex;
   flex-wrap: wrap;
@@ -56,8 +53,9 @@ body {
   border: solid 1px hsla(15, 0%, 15%, 0.15);
   border-radius: 10px;
   background-color: hsla(15, 0%, 15%, 0.15);
-  cursor: default;
   transition: ease 0.15s;
+  user-select: none;
+  cursor: pointer;
 }
 .btn-info span {
   width: 35px;
@@ -73,7 +71,6 @@ body {
   border: solid 1px hsla(15, 0%, 75%, 0.75);
   border-radius: 5px;
   background-color: hsla(15, 0%, 100%, 0.15);
-  user-select: none;
 }
 .btn-info--up {
   bottom: 150%;
@@ -132,6 +129,7 @@ body {
 .btn-joysticks__item {
   position: relative;
   background-color: hsl(232, 33%, 10%);
+  cursor: pointer;
 }
 .btn-joysticks__item--up {
   width: 50px;
@@ -180,6 +178,7 @@ body {
   align-items: center;
   border: solid 1px hsl(232, 15%, 15%);
   border-radius: unset;
+  pointer-events: none;
 }
 .btn-joysticks__item--center span {
   width: 33.3333333333px;
@@ -209,6 +208,7 @@ body {
   border-radius: 100%;
   background-color: hsl(333, 80%, 33%);
   position: relative;
+  cursor: pointer;
 }
 .btn-actions__item--b {
   margin-top: 50px;
@@ -226,8 +226,8 @@ body {
   text-transform: uppercase;
   text-align: center;
   transform: rotate(-25deg);
-  cursor: default;
   user-select: none;
+  pointer-events: none;
 }
 
 .btn-options {
@@ -249,6 +249,7 @@ body {
   border-radius: 100px;
   transform: rotate(65deg);
   background-color: hsl(232, 5%, 50%);
+  cursor: pointer;
 }
 .btn-options__name {
   width: 100px;
@@ -260,8 +261,8 @@ body {
   text-transform: uppercase;
   text-align: center;
   transform: rotate(-90deg);
-  cursor: default;
   user-select: none;
+  pointer-events: none;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -143,7 +143,7 @@ document.addEventListener("keydown", (event) => {
     : (code === "ShiftLeft") ? btnSelect()
     : (code === "MetaLeft") ? btnStart()
     
-    : console.log("Une autre touche est appuyée");
+    : false;
     
 }, false);
 // ----------------------------------------------------------------------------------------------------

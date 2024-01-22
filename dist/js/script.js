@@ -26,12 +26,9 @@ const btnInfosCmd = document.getElementsByClassName("btn-info--start")[0];
 // ----------------------------------------------------------------------------------------------------
 
 // GLOBAL FUNCTIONS ---------------------------------------------------------------------------
-function fx_sounds() {
-    fxSounds.play();
-};
 function btnUp() {
     console.log("UP");
-    fx_sounds();
+    fxSounds.play();
     btnInfosZ.classList.add("hovered");
     this.addEventListener("keyup", function() {
         btnInfosZ.classList.remove("hovered");
@@ -42,7 +39,7 @@ function btnUp() {
 }
 function btnLeft() {
     console.log("LEFT");
-    fx_sounds();
+    fxSounds.play();
     btnInfosQ.classList.add("hovered");
     this.addEventListener("keyup", function() {
         btnInfosQ.classList.remove("hovered");
@@ -53,7 +50,7 @@ function btnLeft() {
 }
 function btnDown() {
     console.log("DOWN");
-    fx_sounds();
+    fxSounds.play();
     btnInfosS.classList.add("hovered");
     this.addEventListener("keyup", function() {
         btnInfosS.classList.remove("hovered");
@@ -64,7 +61,7 @@ function btnDown() {
 }
 function btnRight() {
     console.log("RIGHT");
-    fx_sounds();
+    fxSounds.play();
     btnInfosD.classList.add("hovered");
     this.addEventListener("keyup", function() {
         btnInfosD.classList.remove("hovered");
@@ -75,7 +72,7 @@ function btnRight() {
 }
 function btnB() {
     console.log("SPACE (B)");
-    fx_sounds();
+    fxSounds.play();
     btnInfosSpace.classList.add("hovered");
     this.addEventListener("keyup", function() {
         btnInfosSpace.classList.remove("hovered");
@@ -86,7 +83,7 @@ function btnB() {
 }
 function btnA() {
     console.log("F (A)");
-    fx_sounds();
+    fxSounds.play();
     btnInfosF.classList.add("hovered");
     this.addEventListener("keyup", function() {
         btnInfosF.classList.remove("hovered");
@@ -97,7 +94,7 @@ function btnA() {
 }
 function btnSelect() {
     console.log("SHIFT (select)");
-    fx_sounds();
+    fxSounds.play();
     btnInfosShift.classList.add("hovered");
     this.addEventListener("keyup", function() {
         btnInfosShift.classList.remove("hovered");
@@ -108,7 +105,7 @@ function btnSelect() {
 }
 function btnStart() {
     console.log("CMD (start)");
-    fx_sounds();
+    fxSounds.play();
     btnInfosCmd.classList.add("hovered");
     this.addEventListener("keyup", function() {
         btnInfosCmd.classList.remove("hovered");
